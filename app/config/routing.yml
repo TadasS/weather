@@ -1,3 +1,4 @@
 app:
-    resource: "@AppBundle/Controller/"
+    resource: "@WeatherWeatherBundle/Controller/"
     type:     annotation
+    prefix:   /
