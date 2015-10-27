@@ -26,7 +26,15 @@
                         <label for="city">City name:</label><br>
                         <input type="text" name="city" id="city" value="{{ city }}" />
                     </div>
-                    <button type="submit" class="btn btn-default">Klausti</button>
+                    <div class="form-group">
+                        <label for="units">Units:</label>
+                        <select name="units" id="units">
+                            {% for unit in units %}
+                                <option {% if unit == selected_unit %}selected="selected"{% endif %} value="{{ unit }}">{{ unit }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-default">Send</button>
                 </form>
                 {% if error != false %}
                     <div class="alert alert-danger" role="alert">{{ error }}</div>
