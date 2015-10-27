@@ -34,7 +34,7 @@ class DefaultController extends Controller
             $city = urlencode($_GET['city']);
             try {
                 $result = file_get_contents('http://api.openweathermap.org/data/2.5/forecast?units='.$unit.'&q='.$city.'&appid='.$api_key.'&lang='.$lang);
-                $result = json_decode($result);
+                $result = json_decode($result); 
 
                 if ($result->cod == 200) {
                     $info = array(
