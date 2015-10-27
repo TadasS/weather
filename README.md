@@ -4,6 +4,11 @@ Weather reports program
 This program can tell you what is the weather right now at selected city.
 Program is powered by [**Symfony2**][1] framework and uses [** Openweathermap **][2] api.
 
+Api is using free version, so there are some limits:
+Calls per minute (no more than): 60
+Calls per day (no more than): 50 000
+
+
 Instruction
 --------------
 
